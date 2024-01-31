@@ -31,7 +31,7 @@ class Pdf_file:
             data=pdf.PdfReader(file)
         for page in data.pages:
             self.writer.add_page(page)
-    
+        #you can adjust the metadata details as you wish
         self.writer.add_metadata({
         "/Author": "Martin",
         "/Producer": "Libre Writer",
